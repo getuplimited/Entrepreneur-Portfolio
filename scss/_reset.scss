@@ -1,22 +1,19 @@
-/*========================================================
+/*=========================================================================================================
 	Theme Reset
-===========================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap");
+===========================================================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-$primary-color: #2d248a;
-$secondary-color: #614ad3;
-$title-color: #17365f;
+$primary-color: #0b132b;
+$title-color: #1c2541;
 $white-color: #fff;
 $off-white-color: #f9f8fb;
 $black-color: #000;
 $border-color: #eeedf6;
 $alert-color: #f24c4c;
 $warning-color: #f8b400;
-$paragraph-color: #323232;
-$stroke-color: #dddcec;
-$fonts-roboto-sans: "Roboto", sans-serif;
-$fonts-bangla: "Hind Siliguri", sans-serif;
+$paragraph-color: #1c2541;
+$stroke-color: #edeef0;
+$fonts-poppins-sans: "Poppins", sans-serif;
 
 *,
 *::after *::before {
@@ -26,8 +23,19 @@ $fonts-bangla: "Hind Siliguri", sans-serif;
   padding: 0;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: $white-color;
+  background: $primary-color;
+}
+
+::selection {
+  color: $white-color;
+  background: $primary-color;
+}
+
 body {
-  font-family: $fonts-roboto-sans;
+  font-family: $fonts-poppins-sans;
   background: $white-color;
   color: $paragraph-color;
   font-size: 16px;
@@ -35,14 +43,28 @@ body {
   line-height: 160%;
 }
 
+html {
+  font-family: $fonts-poppins-sans;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .container {
-  max-width: 1320px;
+  max-width: 1440px;
   padding: 0px;
 }
 
 .container-fluid {
   padding: 0;
-  padding: 0px 60px;
+  padding: 0px 24px;
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
@@ -74,21 +96,6 @@ body {
     padding: 0% 5%;
   }
 }
-
-html {
-  font-family: $fonts-roboto-sans;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
 img {
   max-width: 100%;
 }
@@ -277,7 +284,7 @@ input,
 select,
 optgroup,
 textarea {
-  font-family: $fonts-roboto-sans;
+  font-family: $fonts-poppins-sans;
   color: $paragraph-color;
   font-weight: 500;
   font-size: 16px;
@@ -286,7 +293,7 @@ textarea {
 
 .c-font,
 .c-font a {
-  font-family: $fonts-roboto-sans;
+  font-family: $fonts-poppins-sans;
 }
 
 h1,
@@ -310,18 +317,18 @@ h5,
 h5 a,
 h6,
 h6 a {
-  font-family: $fonts-roboto-sans, $fonts-bangla;
+  font-family: $fonts-poppins-sans;
   color: $title-color;
   font-weight: 700;
   line-height: 145%;
 }
 
 h1 {
-  font-size: 49px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 39px;
+  font-size: 38px;
 }
 
 h3 {
@@ -348,75 +355,6 @@ p {
   font-size: 18px;
   margin: 0 0 15px;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  h1 {
-    font-size: 35px;
-    line-height: 140%;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  h3 {
-    font-size: 31px;
-  }
-
-  h4 {
-    font-size: 22px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-
-  h6 {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  h1 {
-    font-size: 30px;
-    line-height: 140%;
-  }
-
-  h2 {
-    font-size: 28px;
-    line-height: 135%;
-  }
-
-  h3 {
-    font-size: 25px;
-  }
-
-  h4 {
-    font-size: 22px;
-  }
-
-  h5 {
-    font-size: 20px;
-  }
-
-  h6 {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-
-  .theme-btn {
-    font-size: 15px;
-
-    i {
-      font-size: 20px !important;
-      top: 5px !important;
-    }
-  }
-}
-
 a,
 button,
 input,
@@ -451,7 +389,7 @@ address {
 
 pre {
   background: #eee;
-  font-family: $fonts-roboto-sans;
+  font-family: $fonts-poppins-sans;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -465,7 +403,7 @@ code,
 kbd,
 tt,
 var {
-  font-family: $fonts-roboto-sans;
+  font-family: $fonts-poppins-sans;
   font-size: 15px;
   font-size: 0.9375rem;
 }
@@ -763,11 +701,7 @@ object {
   display: inline-block;
 }
 
-/*========================================================
-	Theme CSS 
-===========================================================*/
-
-/* Padding */
+/* Theme Padding */
 .pd-top-10 {
   padding-top: 10px;
 }
@@ -852,7 +786,7 @@ object {
   padding-bottom: 100px;
 }
 
-/* Margin */
+/* Theme Margin */
 .mg-top-10 {
   margin-top: 10px;
 }
@@ -913,227 +847,91 @@ object {
   margin-bottom: 50px;
 }
 
-.mg-right {
-  margin-right: 0 !important;
-}
-
-/* Section Padding */
-
 /* Theme Button */
+
 .theme-btn {
-  background: $secondary-color;
-  color: $off-white-color;
-  font-weight: 500;
+  position: relative;
   font-size: 16px;
-  line-height: 160%;
+  color: $title-color;
+  font-weight: 500;
+  padding: 12px 48px 12px 16px;
   display: inline-block;
-  padding: 12px 20px;
-  border-radius: 4px;
-  transition: all 0.4s ease;
-
+  border: 1px solid $title-color;
+  line-height: 140%;
+  z-index: 1;
   i {
-    margin-right: 4px;
-    font-size: 16px;
-    position: relative;
-    top: 2px;
+    font-size: 24px;
+    position: absolute;
+    top: 24px;
+    transform: translateY(-50%);
+    transition: all ease 0.2s;
+    -webkit-transition: all ease 0.2s;
+    -moz-transition: all ease 0.2s;
+    -ms-transition: all ease 0.2s;
+    -o-transition: all ease 0.2s;
+    margin-right: 16px;
+    &:first-child {
+      right: 10%;
+      visibility: hidden;
+      opacity: 0;
+    }
+    &:last-child {
+      right: 0;
+    }
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 51px;
+    height: 6px;
+    bottom: 0;
+    background: $title-color;
+    left: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+  }
   &:hover {
-    background: $primary-color;
-    color: $off-white-color;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .theme-btn {
-    font-size: 15px;
-    padding: 8px 17px;
-
+    color: $white-color;
     i {
-      font-size: 15px !important;
-      top: 2px !important;
+      &:first-child {
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+      }
+      &:last-child {
+        right: -10%;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+    &::after {
+      width: 100%;
+      height: 100%;
     }
   }
 }
 
-/* Section Head */
-.section-head {
-  text-align: center;
-  margin-bottom: 10px;
+// .theme-btn i:first-child {
+//   right: 10%;
+//   visibility: hidden;
+//   opacity: 0;
+// }
+// .theme-btn i:last-child {
+//   right: 0;
+// }
+// .theme-btn:hover i:first-child {
+//   right: 0;
+//   visibility: visible;
+//   opacity: 1;
+// }
+// .theme-btn:hover i:last-child {
+//   right: -10%;
+//   visibility: hidden;
+//   opacity: 0;
+// }
 
-  .section-head-text {
-    margin-bottom: 8px;
-    color: $title-color;
-
-    b {
-      font-weight: 500;
-    }
-  }
-
-  .section-title {
-    margin: 0px;
-  }
-}
-
-/* Scroll Top */
-.scrollToTop {
-  right: 60px;
-  z-index: 33;
-  bottom: 40px;
-  position: fixed;
-  text-align: center;
-  opacity: 0;
-  -webkit-transform: translateX(50px);
-  transform: translateX(50px);
-  visibility: hidden;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-  z-index: 444;
-
-  i {
-    height: 55px;
-    width: 55px;
-    line-height: 62px;
-    background: $secondary-color;
-    border-radius: 100%;
-    font-size: 25px;
-    -webkit-transition: all 0.6s ease;
-    transition: all 0.6s ease;
-    display: block;
-    color: #f8f9ff;
-
-    &:hover {
-      background: $primary-color;
-      color: #f8f9ff;
-    }
-  }
-}
-
-.scrollToTop.show {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: translateX(0px);
-  transform: translateX(0px);
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .scrollToTop {
-    right: 40px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .scrollToTop {
-    right: 20px;
-  }
-}
-
-/* Preloader */
-#preloader {
-  background-color: $off-white-color;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  margin-top: 0px;
-  top: 0px;
-  z-index: 9999999;
-}
-
-#loading-center {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.loader {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin: 75px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.loader .loader-outter {
-  position: absolute;
-  border: 4px solid $secondary-color;
-  border-left-color: transparent;
-  border-bottom: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  -webkit-animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41)
-    infinite;
-  animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
-}
-
-.loader .loader-inner {
-  position: absolute;
-  border: 4px solid $secondary-color;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  left: calc(50% - 20px);
-  top: calc(50% - 20px);
-  border-right: 0;
-  border-top-color: transparent;
-  -webkit-animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41)
-    infinite;
-  animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
-}
-
-@-webkit-keyframes loader-outter {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes loader-outter {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes loader-inner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-
-@keyframes loader-inner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-}
-
-/*========================================================
-	End Theme CSS 
-===========================================================*/
+/*=========================================================================================================
+	End Theme Reset
+===========================================================================================================*/
