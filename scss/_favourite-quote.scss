@@ -33,6 +33,8 @@
 }
 .favourite-quote-content {
   text-align: left;
+  z-index: 2;
+  position: relative;
   img {
     width: 116px;
     height: 116px;

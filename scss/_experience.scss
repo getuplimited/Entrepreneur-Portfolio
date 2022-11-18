@@ -1,0 +1,81 @@
+/*=========================================================================================================
+    Experience  Area
+===========================================================================================================*/
+.experience-area {
+  padding-top: 72px;
+}
+.experience-section-head {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.exp-section-head-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 140%;
+  color: $primary-color;
+}
+.experience-single-card {
+  position: relative;
+  margin-top: 48px;
+  background: $white-color;
+  border: 1px solid $border-color;
+  padding: 24px 24px 53px 24px;
+  transition: all 0.3s ease;
+  &:hover {
+    border: 1px solid $primary-color;
+    .exp-card-number {
+      color: $primary-color;
+    }
+  }
+}
+.experience-single-card.add-margin {
+  margin-top: 124px;
+}
+.experience-single-card.card-5 {
+  margin-top: -56px;
+}
+.experience-single-card.card-6 {
+  margin-top: 48px;
+}
+.experience-single-card.card-7 {
+  margin-top: -26px;
+}
+.experience-single-card.card-8 {
+  margin-top: 48px;
+}
+.exp-card-icon {
+  margin-bottom: 48px;
+  img {
+    width: 108px;
+    height: 108px;
+  }
+}
+.exp-card-number {
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 100%;
+  text-align: right;
+  color: #f6f6f7;
+  transition: all 0.3s ease;
+}
+.exp-card-content-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  margin-bottom: 16px;
+  color: $primary-color;
+}
+.exp-card-content-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  margin: 0;
+}
+/*=========================================================================================================
+    End Experience Area
+===========================================================================================================*/
