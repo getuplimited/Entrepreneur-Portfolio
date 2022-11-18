@@ -44,42 +44,54 @@
     });
 
     /*==============================================================================
-		Available Pop Location Slider 
-	================================================================================*/
-    $(".a-pop-location-slider").owlCarousel({
-      items: 2,
+		  Testimonial Slider
+	  ================================================================================*/
+    /*====================================
+			Hero Slider JS
+		======================================*/
+    $(".testimonial-slider-inner").slick({
       autoplay: true,
-      loop: true,
-      margin: 30,
-      autoplayTimeout: 4000,
-      autoplayHoverPause: false,
-      autoWidth: false,
-      smartSpeed: 1000,
-      merge: true,
-      nav: true,
-      navText: [
-        '<i class="fi-rr-angle-small-left" aria-hidden="true"></i>',
-        '<i class="fi-rr-angle-small-right" aria-hidden="true"></i>',
+      speed: 800,
+      autoplaySpeed: 3500,
+      slidesToShow: 1,
+      pauseOnHover: true,
+      centerMode: true,
+      cssEase: "linear",
+      infinite: true,
+      centerPadding: "0px",
+      dots: true,
+      arrows: false,
+      cssEase: "ease",
+      speed: 700,
+      fade: true,
+      draggable: true,
+      prevArrow:
+        '<button class="Prev"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>',
+      nextArrow:
+        '<button class="Next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>',
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 350,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+          },
+        },
       ],
-      dots: false,
-
-      responsive: {
-        300: {
-          items: 1,
-        },
-        480: {
-          items: 1,
-        },
-        768: {
-          items: 1,
-        },
-        1024: {
-          items: 1,
-        },
-        1170: {
-          items: 2,
-        },
-      },
     });
   });
 })(jQuery);
