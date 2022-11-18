@@ -1,0 +1,169 @@
+/*=========================================================================================================
+    Testimonial Area
+===========================================================================================================*/
+.testimonial-area {
+  padding: 144px 0px;
+}
+.testimonial-cont-sm-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #000000;
+  position: relative;
+  display: inline-block;
+  padding-left: 48px;
+  margin-bottom: 16px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #edeef0;
+    left: 0;
+    top: 50%;
+  }
+}
+.testimonial-cont-big-title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  color: $primary-color;
+  margin-bottom: 32px;
+}
+
+.testimonial-cont-text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 180%;
+  margin: 0;
+}
+
+.testimonial-slider-img {
+  float: right;
+  img {
+    width: 400px;
+    height: 540px;
+    object-fit: cover;
+  }
+}
+.testimonial-slider-cont-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 160%;
+  color: $title-color;
+  margin: 0;
+}
+
+.testimonial-slider-cont-bottom {
+  margin-top: 24px;
+}
+.testimonial-client-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.testimonial-client-tag {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $title-color;
+  opacity: 0.5;
+}
+.testimonial-slider-content img {
+  width: 80px;
+  height: 60px;
+  margin-top: 56px;
+}
+.testi-slider-single-left {
+  position: relative;
+}
+.testi-quote-icon-1 {
+  position: absolute;
+  left: 12px;
+  top: 24px;
+  width: 80px;
+  height: 60px;
+}
+
+/* Slick Dots */
+.testimonial-slider-inner .slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.testimonial-slider-inner .slick-dots li {
+  margin-bottom: 20px;
+  &:last-child {
+    margin: 0;
+  }
+}
+.testimonial-slider-inner .slick-dots li button {
+  color: $primary-color;
+}
+.testimonial-slider-inner .slick-dots li button {
+  width: 0;
+  height: 70px;
+  line-height: 0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  border-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  color: rgba(11, 19, 43, 0.5);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 0;
+  padding-left: 14px;
+  display: flex;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 70px;
+    background: rgba(11, 19, 43, 0.16);
+    top: -13px;
+    left: 0;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    &::before {
+      background: $primary-color;
+    }
+  }
+}
+
+.testimonial-slider-inner .slick-dots li.slick-active button::before {
+  background: $primary-color;
+}
+.testimonial-slider-inner .slick-dots li button:last-child {
+  margin-bottom: 0px;
+}
+.testimonial-slider-inner .slick-dots li.slick-active button,
+.testimonial-slider-inner .slick-dots li:hover button {
+  background: transparent;
+  color: $primary-color;
+}
+#slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02,
+#slick-slide-control03,
+#slick-slide-control04,
+#slick-slide-control05 {
+  &::after {
+    position: absolute;
+    content: "0";
+    left: 6px;
+  }
+}
+.testimonial-slider-single {
+  padding-left: 52px;
+}
+/*=========================================================================================================
+    End Testimonial Area
+===========================================================================================================*/
