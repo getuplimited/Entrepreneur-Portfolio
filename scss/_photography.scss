@@ -1,0 +1,104 @@
+/*=========================================================================================================
+    Photography Area
+===========================================================================================================*/
+.photography-area {
+  padding: 144px 0px;
+}
+.photography-section-head {
+  text-align: center;
+  margin-bottom: 72px;
+}
+.photography-sec-head-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 140%;
+  text-align: center;
+  color: $primary-color;
+}
+
+.gallery-single-img {
+  position: relative;
+  img {
+    width: 100%;
+    height: 268px;
+    object-fit: cover;
+  }
+}
+.gallery-single-img.img-4 {
+  img {
+    height: 360px;
+  }
+}
+
+.gallery-single-img.img-5 {
+  img {
+    height: 360px;
+  }
+}
+.gallery-single-img.img-6 {
+  img {
+    height: 632px;
+  }
+}
+
+.gallery-single-img.img-8 {
+  img {
+    height: 360px;
+  }
+}
+
+.gallery-single-img.img-9 img,
+.gallery-single-img.img-10 img,
+.gallery-single-img.img-11 img,
+.gallery-single-img.img-12 img {
+  height: 280px;
+  margin-top: 4px;
+}
+
+.gallery-single-img.img-4,
+.gallery-single-img.img-5 {
+  margin-top: 4px;
+  margin-right: 4px;
+}
+.gallery-single-img.img-1,
+.gallery-single-img.img-2,
+.gallery-single-img.img-3,
+.gallery-single-img.img-6,
+.gallery-single-img.img-9,
+.gallery-single-img.img-10,
+.gallery-single-img.img-11 {
+  margin-right: 4px;
+}
+.gallery-single-img.img-8 {
+  margin-top: 4px;
+}
+
+.video-main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -20px;
+  margin-top: -20px;
+  img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+.gallery-single-img.video-player {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: 0.88;
+  }
+}
+
+/*=========================================================================================================
+   End  Photography Area
+===========================================================================================================*/
