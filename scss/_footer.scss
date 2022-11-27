@@ -1,0 +1,63 @@
+/*=========================================================================================================
+    Footer Area
+===========================================================================================================*/
+.footer-area {
+  background: $primary-color;
+  padding: 50px 0px;
+}
+.footer-content {
+  text-align: center;
+}
+
+.footer-content-list {
+  li {
+    display: inline-block;
+    margin-right: 16px;
+    position: relative;
+    padding-left: 16px;
+    a {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      color: #fdfdfd;
+    }
+    &:last-child {
+      margin: 0;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 5px;
+      height: 5px;
+      background: #fdfdfd;
+      border-radius: 100%;
+      left: 0;
+      top: 11px;
+      transition: all 0.4s ease;
+    }
+    &:hover {
+      &::before {
+        background: #0074e4;
+      }
+      a {
+        color: #0074e4;
+      }
+    }
+  }
+}
+.footer-copyright-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #fdfdfd;
+  margin-bottom: 24px;
+  a {
+    color: #0074e4;
+    font-weight: 500;
+  }
+}
+/*=========================================================================================================
+   End Footer Area
+===========================================================================================================*/
