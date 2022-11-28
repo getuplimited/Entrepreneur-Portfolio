@@ -4,20 +4,36 @@
 .contact-area {
   position: relative;
   padding: 144px 0px;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 50%;
+  margin-bottom: 72px;
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   width: 51%;
+  //   height: 100%;
+  //   background-image: url("../img/paper-plane-bg.svg");
+  //   z-index: -1;
+  //   background-size: cover;
+  //   background-position: right;
+  //   background-repeat: no-repeat;
+  //   right: 0;
+  //   top: 0;
+  // }
+}
+
+.contact-paper-plane-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  img {
+    width: 100%;
     height: 100%;
-    background-image: url("../img/paper-plane-bg.svg");
-    z-index: -1;
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-    right: 0;
-    top: 0;
   }
 }
+
 .contact-form-box {
   padding: 0px 84px;
 }
@@ -49,6 +65,13 @@
       line-height: 140%;
       color: $title-color;
       border-radius: 0px;
+      transition: all 0.4s ease;
+    }
+    input:focus {
+      border: 1px solid $title-color;
+    }
+    textarea:focus {
+      border: 1px solid $title-color;
     }
     &:last-child {
       margin: 0;
@@ -62,6 +85,7 @@
       font-size: 16px;
       line-height: 140%;
       color: $title-color;
+      transition: all 0.4s ease;
     }
   }
   .nice-select {
@@ -171,7 +195,7 @@
     a {
       border: 1px solid $title-color;
       border-radius: 2px;
-      padding: 17px 20px;
+      padding: 16px;
       font-weight: 500;
       font-size: 16px;
       line-height: 140%;
