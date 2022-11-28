@@ -140,7 +140,7 @@
 	  ================================================================================*/
     $(".blog-slider").owlCarousel({
       items: 4,
-      autoplay: true,
+      autoplay: false,
       loop: true,
       autoplayTimeout: 5000,
       autoplayHoverPause: false,
