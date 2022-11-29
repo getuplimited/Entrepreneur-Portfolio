@@ -33,6 +33,24 @@ $fonts-poppins-sans: "Poppins", sans-serif;
   color: $white-color;
   background: $primary-color;
 }
+::-webkit-scrollbar {
+  width: 0px !important;
+  height: 8px !important;
+  display: none;
+}
+::-moz-scrollbar {
+  width: 0px !important;
+  height: 8px !important;
+  display: none;
+}
+::-ms-scrollbar {
+  width: 0px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer !important;
+  background: $primary-color !important;
+}
 
 body {
   font-family: $fonts-poppins-sans;
