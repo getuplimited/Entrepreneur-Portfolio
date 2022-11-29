@@ -1,7 +1,268 @@
 /*=========================================================================================================
     Header Area
 ===========================================================================================================*/
+.header {
+  padding-top: 24px;
+}
+.menu-btn {
+  margin-top: -14px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 25px;
+  height: 40px;
+}
 
+.menu-btn.default-menu-btn {
+  display: none;
+}
+.header__builder .menu-btn {
+  margin-top: 0;
+  margin-left: auto;
+  position: relative;
+  top: 0;
+  display: block;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  background: #f5f6f7;
+  text-align: center;
+  border-radius: 100%;
+  right: 0;
+  line-height: 44px;
+}
+.menu-btn span {
+  margin-top: -4.5px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  width: 100%;
+  display: block;
+  height: 9px;
+}
+.menu-btn span::after,
+.menu-btn span::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 2px;
+  background: #0b132b;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  -o-transition: all 0.3s cubic-bezier(0.3, 0, 0.3, 1);
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 30px;
+  -khtml-border-radius: 1px;
+}
+.menu-btn span::after {
+  top: auto;
+  bottom: 0;
+  width: 16px;
+}
+.menu-btn.no-touch {
+  pointer-events: none;
+}
+.menu-btn.active span {
+  background: 0 0;
+}
+.menu-btn.active span:after,
+.menu-btn.active span:before {
+  top: 8px;
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+.menu-btn.active span:after {
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+.menu-full-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-full-overlay::before {
+  content: "";
+  position: absolute;
+  left: -10vw;
+  top: -20vh;
+  width: 120vw;
+  height: 120vh;
+  -webkit-animation: close-menu-popup 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+  animation: close-menu-popup 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+  background: #1c2541;
+}
+.menu-full-overlay.is-open:before {
+  -webkit-animation: open-menu-popup 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+  animation: open-menu-popup 1s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+}
+.menu-full-overlay.has-scroll .menu-full-container {
+  overflow: auto;
+}
+.menu-full-overlay.visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu-full-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  z-index: 22;
+}
+.menu-full-container .container {
+  margin: auto;
+}
+.menu-full {
+  position: relative;
+  padding: 150px 0;
+}
+.menu-full ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+.menu-full ul li {
+  margin-bottom: 48px;
+}
+.menu-full ul li:last-child {
+  margin-bottom: 0;
+}
+.menu-full ul li a {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 48px;
+  text-decoration: none;
+  line-height: 120%;
+  color: #d2d3d9;
+}
+.menu-full ul li a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background: linear-gradient(380deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  height: 4px;
+  bottom: -8px;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  transition: all 0.7s ease;
+}
+.menu-full ul li a:hover::before {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+.menu-full ul li a:hover .char,
+.menu-full ul li a:hover .word {
+  color: #ff8059;
+}
+.menu-full ul li ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: none;
+}
+.menu-full ul li ul li {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+.menu-full ul li ul li:last-child {
+  margin-bottom: 0;
+}
+.menu-full ul li ul li a {
+  padding-left: 40px;
+  padding-right: 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  font-family: Rubik;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 300;
+  color: #bdc1c7;
+}
+.menu-full ul li ul li a:hover .char,
+.menu-full ul li ul li a:hover .word {
+  color: #ff8059;
+}
+.menu-full ul li ul li.active > a {
+  color: #ff8059;
+}
+.menu-full ul li.active > a {
+  color: #ff8059;
+}
+.menu-full ul li.opened > ul {
+  padding: 30px 0;
+  opacity: 1;
+  visibility: visible;
+}
+.menu-full ul li.opened .scrolla-element-anim-1 {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.menu-full ul li.disable {
+  pointer-events: none;
+}
+.menu-full ul li.disable > a .char {
+  opacity: 0.5 !important;
+}
+
+@-webkit-keyframes close-menu-popup {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) skew(-10deg, -10deg);
+    transform: translate3d(0, 0, 0) skew(-10deg, -10deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, -100%, 0) skew(0);
+    transform: translate3d(0, -100%, 0) skew(0);
+  }
+}
+@-webkit-keyframes open-menu-popup {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0) skew(-10deg, -10deg);
+    transform: translate3d(0, -100%, 0) skew(-10deg, -10deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) skew(0);
+    transform: translate3d(0, 0, 0) skew(0);
+  }
+}
+
+.menu-btn.active span::after,
+.menu-btn.active span::before {
+  top: 4px;
+  width: 24px;
+}
+.menu-full-overlay.is-open.visible.has-scroll.animate-active {
+  z-index: 999;
+}
 /*=========================================================================================================
     End Header Area
 ===========================================================================================================*/
