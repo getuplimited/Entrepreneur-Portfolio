@@ -59,6 +59,32 @@
       </p>
     <![endif]-->
 
+    <!-- preloader  -->
+    <div id="preloader">
+      <div id="ctn-preloader" class="ctn-preloader">
+        <div class="animation-preloader">
+          <div class="spinner"></div>
+        </div>
+        <div class="loader">
+          <div class="row">
+            <div class="col-3 loader-section section-left">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+              <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+              <div class="bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- preloader end -->
+
     <!-- back to top start -->
     <div class="progress-wrap">
       <svg
@@ -72,6 +98,31 @@
     </div>
     <!-- back to top end -->
 
+    <div class="follow-me-fixed">
+      <ul class="follow-me-social">
+        <li>
+          <a href="#" target="_blank"
+            ><img src="img/follow-me-social-icon/facebook.svg"
+          /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"
+            ><img src="img/follow-me-social-icon/linkedin.svg"
+          /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"
+            ><img src="img/follow-me-social-icon/twitter.svg"
+          /></a>
+        </li>
+        <li>
+          <a href="#" target="_blank"
+            ><img src="img/follow-me-social-icon/instagram.svg"
+          /></a>
+        </li>
+      </ul>
+      <p class="follow-me-text">Follow me</p>
+    </div>
     <!-- Header -->
     <header class="header">
       <div class="container-fluid">
@@ -128,7 +179,7 @@
                   Entrepreneur with big dreams.
                 </h1>
                 <div class="hero-content-btn">
-                  <a href="#" class="theme-btn"
+                  <a href="#contact" class="theme-btn"
                     >Get consultation<i class="fi-rr-arrow-right"></i
                     ><i class="fi-rr-arrow-right"></i
                   ></a>
@@ -189,7 +240,7 @@
                   Looking for a business consultation?
                 </h4>
                 <div class="aboutme-cont-btn">
-                  <a href="#" class="theme-btn"
+                  <a href="#contact" class="theme-btn"
                     >Get consultation<i class="fi-rr-arrow-right"></i
                     ><i class="fi-rr-arrow-right"></i
                   ></a>
@@ -1414,7 +1465,7 @@
       </div>
     </section>
 
-    <section class="contact-area">
+    <section id="contact" class="contact-area">
       <div class="contact-paper-plane-img">
         <img src="img/paper-plane-bg.svg" alt="#" />
       </div>
@@ -1570,6 +1621,13 @@
                         <div class="form-group">
                           <label>Message details</label>
                           <textarea name="message" required></textarea>
+                        </div>
+                        <div class="contact-form-bottom">
+                          <button type="submit" class="theme-btn">
+                            Send message
+                            <i class="fi-rs-paper-plane"></i>
+                            <i class="fi-rs-paper-plane"></i>
+                          </button>
                         </div>
                       </div>
                     </div>
