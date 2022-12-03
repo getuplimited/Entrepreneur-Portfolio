@@ -76,6 +76,42 @@
   line-height: 160%;
   margin: 0;
 }
+
+@media only screen and (max-width: 767px) {
+  .exp-section-head-title {
+    font-size: 28px;
+  }
+  .exp-card-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .exp-card-icon {
+    margin-bottom: 32px;
+  }
+  .exp-card-number {
+    top: 34px;
+    font-size: 60px;
+  }
+  .exp-card-content-title {
+    font-size: 22px;
+  }
+  .exp-card-content-text {
+    font-size: 16px;
+  }
+  .experience-single-card {
+    padding: 24px 24px 32px 24px;
+  }
+  .experience-single-card.add-margin {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-5 {
+    margin-top: 48px;
+  }
+  .experience-single-card.card-7 {
+    margin-top: 48px;
+  }
+}
+
 /*=========================================================================================================
     End Experience Area
 ===========================================================================================================*/

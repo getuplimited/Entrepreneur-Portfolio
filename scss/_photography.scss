@@ -99,6 +99,25 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .photography-area {
+    padding: 80px 0px;
+  }
+  .photography-sec-head-title {
+    font-size: 28px;
+  }
+  .gallery-single-img {
+    margin: 0 !important;
+    margin-top: 4px !important;
+  }
+  .gallery-single-img.img-9 img,
+  .gallery-single-img.img-10 img,
+  .gallery-single-img.img-11 img,
+  .gallery-single-img.img-12 img {
+    margin-top: 0;
+  }
+}
+
 /*=========================================================================================================
    End  Photography Area
 ===========================================================================================================*/

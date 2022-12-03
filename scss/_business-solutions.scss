@@ -157,6 +157,44 @@
     font-weight: 600;
   }
 }
+@media only screen and (max-width: 767px) {
+  .biz-solution-cont-sm-title {
+    font-size: 18px;
+  }
+  .biz-solution-cont-big-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .biz-solution-cont-text {
+    font-size: 16px;
+  }
+  .biz-solution-content {
+    margin-top: 0;
+  }
+  .business-solution-area {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+  .biz-solution-card-title {
+    font-size: 24px;
+  }
+  .biz-solution-card-tag {
+    font-size: 15px;
+  }
+  .biz-solution-card img {
+    width: 94px;
+    height: 94px;
+  }
+  .biz-solution-card-btn {
+    margin-top: 94px;
+  }
+  .biz-solution-card {
+    min-height: 400px;
+  }
+  .biz-solution-card img {
+    margin-bottom: 48px;
+  }
+}
 
 /*=========================================================================================================
    End Business Solutions Area

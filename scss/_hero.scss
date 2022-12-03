@@ -168,6 +168,32 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .hero-content-title {
+    font-size: 34px;
+  }
+  .hero-content {
+    margin-top: 132px;
+  }
+  .hero-content-bottom {
+    margin-top: 80px;
+  }
+  .hero-content-list li {
+    margin-right: 3px;
+    padding-right: 24px;
+    font-size: 18px;
+    &::before {
+      width: 16px;
+    }
+  }
+
+  .hero-area {
+    &::after {
+      height: 250px;
+    }
+  }
+}
+
 /*=========================================================================================================
     End Hero Area
 ===========================================================================================================*/

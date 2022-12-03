@@ -391,6 +391,35 @@
   padding: 72px 0px;
   background: #fafbfb;
 }
+
+@media only screen and (max-width: 767px) {
+  .blog-sec-head-title {
+    font-size: 28px;
+  }
+  .blog-card-cont-title {
+    font-size: 22px;
+    margin-bottom: 28px;
+  }
+  .blog-card-cont-btn .blog-card-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+  .blog-card-cont-btn .blog-card-btn i {
+    font-size: 20px;
+    top: 5px;
+  }
+  .blog-single-card.card-2,
+  .blog-single-card.card-4 {
+    margin-top: 40px;
+  }
+  .blog-single-card {
+    margin-bottom: 64px;
+  }
+  .blog-slider .owl-controls {
+    margin-top: -16px;
+  }
+}
+
 /*=========================================================================================================
    End Blog Area
 ===========================================================================================================*/
