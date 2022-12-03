@@ -58,6 +58,20 @@
     font-weight: 500;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .footer-copyright-text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .footer-content-list li a {
+    font-size: 14px;
+  }
+  .footer-area {
+    padding: 48px 0px;
+  }
+}
+
 /*=========================================================================================================
    End Footer Area
 ===========================================================================================================*/

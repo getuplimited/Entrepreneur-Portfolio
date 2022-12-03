@@ -40,7 +40,31 @@
     height: 116px;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .fav-quote-cont-title br {
+    display: none;
+  }
+  .fav-quote-cont-title {
+    font-size: 28px;
+  }
+  .fav-quote-cont-sm-title {
+    font-size: 22px;
+  }
+  .favourite-quote-content img {
+    width: 80px;
+    height: 80px;
+  }
+  .favourite-quote-content {
+    text-align: center;
+  }
+  .favourite-quote-area {
+    padding-bottom: 80px;
+  }
+  .favourite-quote-area::after {
+    height: 250px;
+    background-position: initial;
+  }
+}
 /*=========================================================================================================
     End Favourite Quote  Area
 ===========================================================================================================*/

@@ -246,6 +246,82 @@
   width: 100%;
   height: 100%;
 }
+
+@media only screen and (max-width: 767px) {
+  .achieve-section-sm-title {
+    font-size: 18px;
+  }
+  .achieve-section-big-title {
+    font-size: 28px;
+  }
+  .achievement-counter {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .achievement-count-card-sm-title {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .achievement-count-card-text {
+    font-size: 15px;
+  }
+  .achievement-scroll-area {
+    margin-top: 80px;
+  }
+  .achievement-scroll-title {
+    font-size: 22px;
+  }
+  .achievement-scroll-title img {
+    width: 30px;
+    height: 30px;
+  }
+  .achievement-scroll-area::before {
+    top: 26px;
+  }
+  .achievement-scroll-head::before {
+    top: 16px;
+  }
+  .achievement-scroll-head::after {
+    top: 16px;
+  }
+  .achievement-card-cont-date {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .achievement-card-content img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+  .achievement-card-cont-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .achievement-card-cont-text {
+    font-size: 14px;
+  }
+  .achi-scroll-card-sm-title {
+    font-size: 14px;
+  }
+  .achievement-scroll-card {
+    padding: 0px 0px 28px 28px;
+    width: 320px;
+  }
+  .achievement-scroll .row .col-lg-3 {
+    width: 320px;
+  }
+  .achievement-card-content {
+    padding-right: 24px;
+  }
+  .achievement-scroll {
+    padding-bottom: 38px;
+  }
+  .achievement-company-icon img {
+    width: 100%;
+    height: 50px;
+    object-fit: cover;
+  }
+}
+
 /*=========================================================================================================
    End Achivement Area
 ===========================================================================================================*/
