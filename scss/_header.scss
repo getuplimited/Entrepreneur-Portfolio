@@ -179,6 +179,19 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .header .navigation__list {
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header .navigation__link {
+    font-size: 28px !important;
+  }
+  .header .navigation__item {
+    margin-bottom: 24px;
+  }
+}
+
 /*=========================================================================================================
     End Header Area
 ===========================================================================================================*/
