@@ -165,6 +165,15 @@
   padding-left: 52px;
 }
 
+@media only screen and (min-width: 1201px) and (max-width: 1550px) {
+  .testimonial-cont-big-title {
+    font-size: 56px;
+  }
+  .testi-quote-icon-1 {
+    display: none !important;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .testimonial-area {
     padding: 80px 0px 0px;

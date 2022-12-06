@@ -383,6 +383,25 @@
   color: #fff;
   background: $title-color !important;
 }
+
+@media only screen and (min-width: 1201px) and (max-width: 1550px) {
+  .contact-form-box {
+    padding: 0;
+  }
+  .contact-info-big-title {
+    font-size: 56px;
+  }
+  .contact-info-contact-top li a {
+    font-size: 0px;
+  }
+  .contact-info-contact-top li a img {
+    margin-right: 0;
+  }
+  .contact-info-contact-top li a:hover::before {
+    width: 50%;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .contact-area {
     padding: 80px 0px;

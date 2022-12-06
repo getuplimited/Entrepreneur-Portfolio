@@ -247,6 +247,17 @@
   height: 100%;
 }
 
+@media only screen and (min-width: 1201px) and (max-width: 1550px) {
+  .achievement-counter {
+    font-size: 48px;
+  }
+  .achievement-count-card-sm-title {
+    font-size: 22px;
+  }
+  .achievement-card-cont-title {
+    font-size: 28px;
+  }
+}
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .achieve-section-sm-title {
     font-size: 18px;

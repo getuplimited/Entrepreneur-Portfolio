@@ -76,6 +76,36 @@
   line-height: 160%;
   margin: 0;
 }
+
+@media only screen and (min-width: 1201px) and (max-width: 1550px) {
+  .exp-card-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .exp-section-head-title {
+    font-size: 44px;
+  }
+  .exp-card-icon {
+    margin-bottom: 32px;
+  }
+  .exp-card-number {
+    top: 34px;
+    font-size: 60px;
+  }
+  .exp-card-content-title {
+    font-size: 24px;
+  }
+  .exp-card-content-text {
+    font-size: 16px;
+  }
+  .experience-single-card {
+    padding: 24px 24px 32px 24px;
+  }
+  .experience-section-head {
+    margin-bottom: 8px;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .exp-section-head-title {
     font-size: 28px;

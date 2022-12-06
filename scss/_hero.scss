@@ -167,6 +167,13 @@
     opacity: 0;
   }
 }
+
+@media only screen and (min-width: 1201px) and (max-width: 1550px) {
+  .hero-content-title {
+    font-size: 74px;
+  }
+}
+
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .hero-content-title {
     font-size: 46px;
