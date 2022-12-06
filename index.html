@@ -1629,33 +1629,26 @@
             <div class="contact-form-area">
               <div class="contact-form-box">
                 <form id="contact-form" action="./mail/mail.php" method="POST">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="ex: Jhone Smith"
-                  />
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="ex: your-email@mail.com"
-                  />
-                  <textarea name="message"></textarea>
-                  <button type="submit">
-                    Send message
-                    <i class="fi-rs-paper-plane"></i>
-                    <i class="fi-rs-paper-plane"></i>
-                  </button>
-                  <p class="form-message"></p>
-                  <!-- <div class="row">
+                  <div class="row">
                     <div
                       class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12"
                     >
                       <div class="contact-form-box-inner">
                         <div class="form-group">
                           <label>Full name</label>
+                          <input
+                            type="text"
+                            name="name"
+                            placeholder="ex: Jhone Smith"
+                          />
                         </div>
                         <div class="form-group">
                           <label>Email address</label>
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="ex: your-email@mail.com"
+                          />
                         </div>
                         <div class="form-group">
                           <label>Select topic</label>
@@ -1683,12 +1676,19 @@
                         </div>
                         <div class="form-group">
                           <label>Message details</label>
+                          <textarea name="message"></textarea>
                         </div>
-                        <div class="contact-form-bottom"></div>
-                     
+                        <div class="contact-form-bottom">
+                          <button type="submit" class="theme-btn">
+                            Send message
+                            <i class="fi-rs-paper-plane"></i>
+                            <i class="fi-rs-paper-plane"></i>
+                          </button>
+                        </div>
+                        <p class="form-message"></p>
                       </div>
                     </div>
-                  </div> -->
+                  </div>
                 </form>
               </div>
             </div>
