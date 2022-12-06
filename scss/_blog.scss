@@ -391,6 +391,11 @@
   padding: 72px 0px;
   background: #fafbfb;
 }
+@media only screen and (min-width: 1201px) and (max-width: 1550px) {
+  .blog-card-cont-title {
+    font-size: 28px;
+  }
+}
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   .blog-sec-head-title {

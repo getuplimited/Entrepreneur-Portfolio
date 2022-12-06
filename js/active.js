@@ -94,27 +94,13 @@
       mainClass: "mfp-fade",
     });
 
-    /*=============================================================================
-			Mobile Menu Sidebar JS
-	  ===============================================================================*/
-    // var $offcanvasNav = $("#offcanvas-menu a");
-    // $offcanvasNav.on("click", function () {
-    //   var link = $(this);
-    //   var closestUl = link.closest("ul");
-    //   var activeLinks = closestUl.find(".active");
-    //   var closestLi = link.closest("li");
-    //   var linkStatus = closestLi.hasClass("active");
-    //   var count = 0;
-
-    //   closestUl.find("ul").slideUp(function () {
-    //     if (++count == closestUl.find("ul").length)
-    //       activeLinks.removeClass("active");
-    //   });
-    //   if (!linkStatus) {
-    //     closestLi.children("ul").slideDown();
-    //     closestLi.addClass("active");
-    //   }
-    // });
+    /*==============================================================================
+		  Wow JS
+	  ================================================================================*/
+    var window_width = $(window).width();
+    if (window_width > 767) {
+      new WOW().init();
+    }
 
     /*==============================================================================
 		  Testimonial Slider
