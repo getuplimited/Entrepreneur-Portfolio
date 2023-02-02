@@ -33,18 +33,17 @@ $fonts-poppins-sans: "Poppins", sans-serif;
   color: $white-color;
   background: $primary-color;
 }
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 0px !important;
+  width: 8px !important;
   height: 8px !important;
-  display: none;
 }
 ::-moz-scrollbar {
-  width: 0px !important;
+  width: 8px !important;
   height: 8px !important;
-  display: none;
 }
 ::-ms-scrollbar {
-  width: 0px !important;
+  width: 8px !important;
   height: 8px !important;
 }
 ::-webkit-scrollbar-thumb {
